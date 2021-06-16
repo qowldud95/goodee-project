@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+
+	<!-- home -->
+	<definition name="index" template="/WEB-INF/views/inc/layout.jsp">
+		<put-attribute name="title" value="index Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/inc/body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition>
+	
+	<!-- 전체상품목록 (shop) -->
+	<definition name="shop" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/shop/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/shop/list.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition>
+	
+	<!-- 글쓰기(shop) -->
+	<definition name="post" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/shop/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/shop/post/list.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition> 
+	
+	<!-- 상품 상세보기(shop) -->
+	<definition name="shopDetail" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/shop/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/shop/detail.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition> 
+	
+	<!-- 내글 목록(shop) -->
+	<definition name="myPostView" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/shop/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/shop/post/mylist.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition> 
+	
+	<!-- 내글 수정하기(shop) -->
+	<definition name="myPostUpdate" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/shop/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/shop/post/listUpdate.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition> 
+	
+	<!-- 내펫 자랑하기 (community)-->
+	<definition name="petShow" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/community/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/community/petshow/list.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition> 
+	
+	<!-- 내펫 자랑하기(상세보기) (community)-->
+	<definition name="petShowDetail" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/community/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/community/petshow/detail.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition> 
+	
+	<!-- 펫산책정보(community)-->
+	<definition name="petWalkingInfo" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/community/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/community/petWalking/infoBody.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition>
+	 
+	<!-- 펫산책정보 상세보기(community)-->
+	<definition name="petWalkingDetail" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/community/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/community/petWalking/infoBodyDetail.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition>
+	
+	<!-- 펫산책정보 상세보기(community)_내가쓴글일때는 수정/삭제 추가-->
+	<definition name="petWalkingDetailMypost" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/community/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/community/petWalking/infoBodyDetailMypost.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition>
+	
+	<!-- 펫산책정보 수정(community)-->
+	<definition name="petWalkingUpdate" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/community/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/community/petWalking/infoBodyUpdate.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition>
+	<!-- 펫산책정보등록하기(community)-->
+	<definition name="petWalkingPost" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/community/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/community/petWalking/postBody.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition>
+	
+	<!-- 내 펫 정보  (mypage)-->
+	<definition name="myPet" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/mypage/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/mypage/mypet/list.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition> 
+	
+	<!-- 내 펫 정보 등록(mypage)-->
+	<definition name="myPetInsert" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/mypage/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/mypage/mypet/listInsert.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition>
+	
+	<!-- 내 펫 정보 수정(mypage) -->
+	<definition name="myPetUpdate" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/mypage/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/mypage/mypet/listUpdate.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition>
+	
+	<!-- 내 회원정보 조회 (mypage)-->
+	<definition name="myInfo" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/mypage/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/mypage/myInfo/list.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition> 
+	
+	<!-- 내 회원정보 수정(mypage) -->
+	<definition name="myInfoUpdate" template="/WEB-INF/views/shop/layout.jsp">
+		<put-attribute name="title" value="Shop Page" />
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+		<put-attribute name="visual" value="/WEB-INF/views/mypage/visual.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/mypage/myInfo/listUpdate.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+	</definition>
+	
+</tiles-definitions>
